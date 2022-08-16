@@ -1,10 +1,13 @@
 <script>
-	export let name;
+	let name = "world";
+	function update() {
+		name = "world11111";
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<button on:click={update}>更新世界的名称</button>
 </main>
 
 <style>
